@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Građevine</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="stil.css"/>
+    </head>
+    <body>
+	<nav>
+	    <a href="gradjevine.html">Građevine</a>
+	</nav>
+	<article>
+	    <h1>Građevine</h1>
+
+	    <p>Engineer ima 4 vrste građevina koje može da sagradi i svaki inžinjer u igri može da ima do jednu građevinu od svake vrste. Svaka od 4 vrste ima
+		svoju cenu u metalu, ali sve vrste građevina mogu da se unaprede dva puta, sa <em>200</em> metala po nivou.</p>
+	    <div class="centar">
+		<img width="600" height="242" src="slike/pda meni.png" alt="slika menija za gradnju"/> <br/>
+		Meni za gradnju.
+	    </div>
+	    <div class="centar">
+		<img width="297" height="230" src="slike/pda.png" alt="slika od PDA za gradnju"/> <br/>
+		PDA pomoću kojeg se gradi.
+	    </div>
+	    <h2>Sentry Gun</h2>
+
+	    <p>Ova građevina, koja košta <em>130</em> metala, je glavno oružije inižinjera. Sentry Gun ima i najviše varijacija između nivoa, pošto se na drugom nivou značajno
+		povećava Damage Per Second a na trećem nivou dobija rakete koje povremeno puca
+		na trenutnu metu. Jedno alternativno oružije za inžinjera koje se zove Gunslinger menja Sentry Gun za
+		Mini-sentry, koji košta samo <em>100</em> metala i brže se gradi, ali ne može da se unapređuje.
+		Pomoću alternativnog oružija koje zamenjuje pištolj i zove se
+		Wrangler može da se preuzme kontrola nad nišanjenjem ove građevine i tako brže puca i ima štit koji smanjuje 3 puta
+		svu štetu koju primi kontrolisani Sentry Gun,
+		ali kada inžinjer promeni aktivno oružije ili umre, još nekoliko sekundi je štit aktivan i automatsko nišanjenje isključeno.
+
+		<table>
+		    <tr><th>Nivo</th> <th>Damage Per Second metaka</th> <th>Health</th></tr>
+		    <tr><td><img width="100" height="100" src="slike/mini.png" alt="Mini"/></td> <td>~50</td>                      <td>100</td></tr>
+		    <tr><td><img width="100" height="97" src="slike/lvl1.png" alt="Nivo 1"/></td>    <td>~78</td>                      <td>130</td></tr>
+		    <tr><td><img width="100" height="98" src="slike/lvl2.png" alt="Nivo 2"/></td>    <td rowspan="2">~130</td>         <td>180</td></tr>
+		    <tr><td><img width="100" height="113" src="slike/lvl3.png" alt="Nivo 3"/></td>                                      <td>216</td></tr>
+		</table>
+
+		Kao što se vidi iz tabele, povoljno je da se što brže pređe na 2. nivo zbog skoka brzine ispaljivanja metaka,
+		dok prelazak na 3. nivo može da sačeka sem ako je odmah potreban povećan Health.</p>
+	    <h2>Dispenser</h2>
+
+	    <p>Ovo je građevina koja svim prijateljskim igračima koji su pored nje dopunjava Health i municiju,
+		ali u to ne spada metal, koji se uzima iz internog rezervoara metala
+		koji se dopunjava svakih 5 sekundi. To znači da jedan Dispenser ne može da konstantno regeneriše metal svim inžinjerima oko sebe, već povremeno dobija
+		metal koji uzima samo inžinjer kome se prvom dodeli. Košta <em>100</em> metala da se sagradi, ali se najduže gradi od svih.</p>
+	    <h2>Teleporter Enterance</h2>
+
+	    <p>Teleporter Enterance košta samo <em>50</em> metala (pre nekoliko godina je koštao čak <em>125</em>!) i može da teleportuje prijateljskog
+		igrača do izlaza istog inžinjera.
+		Sa alternativnim oružijem Eureka Effect, sagrađeni teleporteri se unapređuju sa samo <em>100</em> metala po nivou.
+		To znači da može da se uštedi na metalu tako što se prebaci na Eureka Effect i sagradi teleporter, pa se vrati na
+		prethodno Melee oružije i kasnije unapredi teleporter.</p>
+	    <h2>Teleporter Exit</h2>
+
+	    <p>Teleporter Exit služi samo da Teleporter Enterance ima gde da pošalje igrače. Oba teleportera koštaju isto da se izgrade i oba se unapređuju istovremeno,
+		a i ako postoji teleporter koji je već unapređen a drugi se tek posle izgradi, taj drugi se automatski dovede na nivo prvog.
+		Kod postavljanja ove građevine je bitno da se okrene ka tamo gde treba da se ide, pošto teleporteri okrenu teleportovane igrače u smeru izlaza.</p>
+	</article>
+    </body>
+</html>
