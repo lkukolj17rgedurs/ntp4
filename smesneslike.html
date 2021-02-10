@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Smešne slike</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="stil.css"/>
+	<script>
+	 var smesneslike =
+	     ["https://i.redd.it/chz8s2sa13l51.png",
+	      "https://i.redd.it/y1fw62vfm9g41.jpg",
+	      "https://i.redd.it/j93x12xc3rf61.jpg",
+	      "https://i.redd.it/ybaafaxf3l841.png",
+	      "https://i.redd.it/4iqta0jg8lg41.png",
+	      "https://i.redd.it/468nzeyt4br41.png",
+	      "https://i.redd.it/tkbtylr6hbj41.jpg",
+	      "https://i.redd.it/kdfa9lxd78p41.jpg",
+	      "https://i.redd.it/g77o4he84rj41.jpg",
+	      "https://i.redd.it/mwp70onoe1q51.jpg",
+	      "https://i.redd.it/j88hh5ff40421.jpg"];
+	 var i = 0;
+	 var img, lstrelica, dstrelica;
+	 function levoSlika()
+	 {
+	     if (i == 0)
+		 return;
+	     img.src = smesneslike[--i];
+	     dstrelica.style.visibility = "";
+	     if (i == 0)
+		 lstrelica.style.visibility = "hidden";
+	 }
+	 function desnoSlika()
+	 {
+	     if (i == smesneslike.length - 1)
+		 return;
+	     img.src = smesneslike[++i];
+	     lstrelica.style.visibility = "";
+	     if (i == smesneslike.length - 1)
+		 dstrelica.style.visibility = "hidden";
+	 }
+	</script>
+	<style>
+	 td
+	 {
+	     width: 10%;
+	     padding: 0;
+	     border: 0;
+	     font-size: 25pt;
+	 }
+	 #levostrelica:hover, #desnostrelica:hover
+	 {
+	     background: blue;
+	     color: white;
+	 }
+	 #sl
+	 {
+	     width: 80%;
+	 }
+	 #smesnaslika
+	 {
+	     display: inline-block;
+	     max-width: 100%;
+	 }
+	 #tabela
+	 {
+	     width: 100%;
+	 }
+	</style>
+    </head>
+    <body onload="lstrelica = document.getElementById('levostrelica'); lstrelica.style.visibility = 'hidden'; dstrelica = document.getElementById('desnostrelica');">
+	<nav>
+	    <a href="index.html">Home</a>
+	    <a href="gradjevine.html">Građevine</a>
+	    <a href="strategija.html">Strategija</a>
+	    <a href="smesneslike.html">Smešne slike</a>
+	</nav>
+	<article>
+	    <table id="tabela">
+		<tr>
+		    <td id="levostrelica" onclick="levoSlika()">←</td>
+		    <td id="sl"><img id="smesnaslika" onload="img = document.getElementById('smesnaslika');" src="https://i.redd.it/chz8s2sa13l51.png" /></td>
+		    <td id="desnostrelica" onclick="desnoSlika()">→</td>
+		</tr>
+	    </table>
+	</article>
+    </body>
+</html>
